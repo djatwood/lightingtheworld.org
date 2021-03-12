@@ -29,3 +29,16 @@ body {
 svg {
     @apply fill-current;
 }
+
+
+.tab {
+    display: none;
+}
+
+.tab+.content {
+    display: none;
+}
+
+.tab:checked+.content {
+    display: block;
+}

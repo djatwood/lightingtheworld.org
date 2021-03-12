@@ -1,0 +1,25 @@
+{{ define "main" }}
+{{ partial "page-header" . }}
+
+<div class="content-width flex pt-20">
+    {{ $tabs := slice }}
+    {{ range $show, $_ := .Site.Data.pricing }}
+    {{ $tabs = $tabs | append $show }}
+    {{ end }}
+    {{ range sort $tabs "" "desc" }}
+    <label for="{{ . }}" class="px-4 py-4 border border-button border-b-0 rounded rounded-b-none mr-2 cursor-pointer">{{ . | title }}</label>
+    {{ end }}
+</div>
+{{ range $index, $show := $tabs }}
+{{ $c := "" }}
+{{ if eq $index 0 }}
+{{ $c = "checked" }}
+{{ end }}
+<input id="{{ $show }}" class="tab" type="radio" name="tabs" {{ $c | safeHTMLAttr }}>
+<div class="content">
+    {{ partial "training/pricing" (dict "show" $show) }}
+</div>
+
+{{ end }}
+
+{{ end }}
