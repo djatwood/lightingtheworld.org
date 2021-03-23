@@ -1,3 +1,6 @@
 baseURL = "https://light-org.vercel.app"
 languageCode = "en-us"
 title = "The Lay Institute for Global Health Training | Training Medical Missionaries Worldwide"
+
+[permalinks]
+blog = "/blog/:year/:month/:filename/"

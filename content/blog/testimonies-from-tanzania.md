@@ -1,0 +1,18 @@
+---
+title: "Testimonies from Tanzania"
+date: 2011-01-17T09:36:12+00:00
+draft: false
+author: Light
+categories: LIGHT AFRICA
+tags: Africa, Nigeria
+---
+
+Several of our students experienced special favor and amazing perseverance as they travelled to Kibidula. Here are just a few…
+
+Brother Leonard comes to us from Mwanza. After making all of the necessary preparation, he arrived early to purchase his ticket and board the bus heading for Mungora at noon. After waiting many hours, he decided to pray. But the bus never came. He tried to get a refund of the money paid for his bus ticket. But they would only refund 70% of the TSH 38,000(schillings) he paid. But he didn’t give up! Finally at 6pm, a second bus from Burundi arrived. There were no seats available but he agreed to stand if he could board the bus. The ride to Mungora was 1,400 km, and 13 hours later he arrived hungry and exhausted. There He took another bus to Iringa and then his last bus to Mafinga. But He arrived with NO money! He had not slept or eaten for 2 days, and had no idea how to get to Kibidula. Praise the Lord! A kind man agreed to call the school for him and the principal came to pick him up. We are SO happy to have Brother Leonard with us and his determination to become a LIGHT to the world for Jesus!
+
+Another amazing story begins in Nigeria. Three brothers, Solomon, Caleb and Good Luck, began plans in late November to attend the L.I.G.H.T program at Kibidula. About 5 days before leaving, 2 others, Bernard and Success, desired to join them but there was so little time left. By now, the Embassy was closed for the holiday and there seemed no way to complete their applications in order to travel in time. The father did not lose hope. He decided to go to the “closed” Embassy and found a staff member there. She explained that she was only stopping by and on holiday. But he pleaded with her. The Lord softened her heart and for 3 days, she came into the office to complete the necessary paperwork, but they would still have to apply for their visas after arriving in Tanzania. Once in Dar Salaam, they applied for the visas. Each of them were approved, despite not having a letter of consent for one of the underage brothers – what a MIGHTY God we serve! Two of the Nigerian group are among the youngest in our class. But they have been so eager to serve, learn and become bright LIGHTS to the world for Jesus!
+
+Our final story has a feminine touch…the class threatened to be an all-male cast&#8211; until the second week. It did not take much persuasion for Beatrice to share her testimony of God’s goodness. Many years ago, she had dream of learning how to become a strong Christian. Shortly thereafter, she attended a presentation of Ellen White’s teachings on health and lifestyle and sensed God answering her prayers. She began to search the Internet to see how she could learn more. Beatrice discovered the L.I.G.H.T. program, but there was no date posted and financially, she didn’t know HOW she would be able to attend. Meanwhile she continued with door-to-door evangelism with fellow church members of the Kimara SDA church in Dar es Salaam. Noting her faithfulness, one of them encouraged her to be patient – God would work things out. Secretly, he contacted Kibidula, paid for her transportation and class fees and only a few days late, Beatrice was on her way! She considers it a miracle to be able to attend and has learned the material quickly. She praises God for choosing her to be a LIGHT for Him!
+
+~Compiled by Loraine Owolabi, guest LIGHT teacher

@@ -1,0 +1,24 @@
+---
+title: "A korean in Colombia!"
+date: 2013-08-16T16:41:04+00:00
+draft: false
+author: Salvatore Cutrona
+categories: Global Work, LIGHT South America, South America
+tags: Prayer Requests, South America
+---
+
+[![Header Colombia](http://lightingtheworld.org/wp-content/uploads/2013/08/Header-Colombia1.jpg)](http://lightingtheworld.org/wp-content/uploads/2013/08/Header-Colombia1.jpg)
+
+My name is Haesoo Kim. I am from South Korea. I am 22 years old and recently graduated from Wildwood.
+
+After the graduation I had a chance to work with LIGHT and to come to Sincelejo, Colombia with my friends Gabi, Betty, Lauraine and Lynette, who are from South  
+
+Africa, Alaska, Chile, and Honduras, respectively. I never imagined before that I would ever come to Colombia, being a Korean. Actually, this was my first time coming to a Latin American country. From the airport to the house that I was staying at, people were staring at me surprised, as though they have never seen an Asian before. Meetingmy expectations, people were very sanguine and warm-hearted. However, nearly all the people we met hardly spoke or understood English, which made us, who couldn’t speak Spanish, depend much on our Spanish-speaking friends.
+
+We stayed in a house of Leo and Carmen, a brother and a sister. Neither of them was married and because their age was similar to ours, we could bond very well. For the first few days, they were very shy and because of the language barrier we scarcely had communications but to just see each other every morning and evening when we woke up and when we were going to bed. However, as the days went by we said within us that we should be friends with this family. and asked them to have breakfast together. Thankfully, they joined our humble American-vegan style breakfast and not only the breakfast but also, with the translation, they joined our morning worship every morning. Later found out that Carmen was a newly baptized Adventist. She said she really enjoys singing hymns together with us. Leo worked in a bakery where they made mostly white bread with cheese. But we had a chance to visit the bakery and teach them how to make whole wheat bread and vegan pizza. He was very interested and wants to continue making whole wheat bread even after we leave.
+
+In Sincelejo, we taught 1 month LIGHT course to the church members. Except Sundays and Fridays, 3 hours of classes were given to the people at night from 6 pm – 9 pm. On Sunday we taught from 9 am – 6 pm which was 8 hours and Friday was our free day. We shared many different subjects with the church members: Daniel, Sanctuary, Christian living, common disease, massage, hydro therapy, etc. We had about average 90 people coming through every class. Despite the fact that Catholic is the dominant religion in Colombia, Adventist churches, though some are small, were still existing in different towns. Church members seemed very active. As we spent time together with the church members, many people invited us to their houses to have meal together and we got to know them better. One of the family members who invited us was suffering from a cancer. We could give her simple treatments with water, sing, and pray for her. She had a very positive attitude about her situation and she used her suffering as a mean to bless and encourage those around her. And this family had a non-Christian friend right next door who was so into Korea. She learned about Korea through TV and internet but have never met a Korean and really wanted to meet one. When I visited her she was so happy and I was able to teach her some Korean. That night she came to listen to our classes where we shared about nutrition and Sanctuary. I believe by the grace of God a seed of truth has been sown in her heart.
+
+I came to Colombia to teach these people, but as I look back, I was the one who was taught precious lessons by this mission trip. I had to take a shower with a bucket of water and wash my clothes by hand. Every time after flushing the toilet or taking a shower I had to fill the bucket up with water from a well. This made me appreciate very much the life I was having at Wildwood. I learned how to live a simple life and be content with what I have. Moreover, I had not realized until I experienced with my own eyes that there are much work to do and many more workers are needed in Colombia. My heart was warmed by the blessings God has given me to share with the people here. I know that feelings can change easily, but as for now, I want to spend all my life doing this kind of mission work. Now I can understand a bit more clearly why I am living today and what I should do.
+
+“_And I thank Christ Jesus our Lord, who hath enabled me, for that he counted me faithful, putting me into the ministry_”  (**I Tim 1:12**)
