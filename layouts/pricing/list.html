@@ -12,7 +12,7 @@
 </div>
 {{ range $index, $show := $tabs }}
 {{ $c := "" }}
-{{ if eq $index 0 }}
+{{ if eq $show "individuals" }}
 {{ $c = "checked" }}
 {{ end }}
 <input id="{{ $show }}" class="tab" type="radio" name="tabs" {{ $c | safeHTMLAttr }}>
