@@ -4,3 +4,8 @@ title = "The Lay Institute for Global Health Training | Training Medical Mission
 
 [permalinks]
 blog = "/blog/:year/:month/:filename/"
+
+[taxonomies]
+author = "author"
+category = "categories"
+tag = "tags"
