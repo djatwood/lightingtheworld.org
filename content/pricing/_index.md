@@ -5,6 +5,7 @@ draft: false
 blocks: 
  - kind: training/pricing
    show: individuals
-cta: hands on training
+cta:
+  context: hands on training
 ---
 

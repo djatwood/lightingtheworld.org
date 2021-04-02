@@ -1,8 +1,5 @@
-{{ $s := newScratch }}
-{{ with .background.color }}{{$s.Set "bg" (printf `style="background-color:%s"` .) }}{{ end }}
-
 {{ if .simple }}
-<section class="flex flex-col items-center py-20 bg-primary-dark text-center" {{ $s.Get "bg" | safeHTMLAttr}}>
+<div class="flex flex-col items-center py-20 text-center">
     <h2 class="content-width heading-light mb-8 text-5xl font-extrabold leading-tight">
         {{ replace .title "\\n" "<br>" | safeHTML }}
     </h2>
@@ -11,46 +8,37 @@
         <a class="button mx-3 {{ .class }}" href="{{ .link }}">{{ .label }}</a>
         {{ end }}
     </div>
-</section>
+</div>
 {{ else }}
-<section class="bg-primary-dark" {{ $s.Get "bg" | safeHTMLAttr }}>
-    <div class="content-width relative py-20">
-        {{ with .background }}
-        <div class="absolute top-0 right-0 flex justify-end w-full h-full"
-            style="mix-blend-mode: {{or .blend `normal`}}">
-            {{ $img := resources.Get .image }}
-            {{ $img = $img.Fit "2000x600" }}
-            <img class="h-full" src="{{ $img.Permalink }}">
-        </div>
-        {{ end }}
 
-        <div class="relative">
-            <div class="max-w-lg">
-                {{ with .subtitle }}
-                <h3 class="mb-2 text-xl text-accent font-display uppercase">{{ . }}</h3>
-                {{ end }}
-                <h2 class="mb-6 text-4xl text-white font-display font-bold uppercase">{{ $.title }}</h2>
-                {{ with .description }}
-                <p class="mb-8 text-xl text-white">{{ . }}</p>
-                {{ end }}
+<div class="content-width relative py-20">
+    <div class="relative">
+        <div class="max-w-lg">
+            {{ with .subtitle }}
+            <h3 class="mb-2 text-xl text-accent font-display uppercase">{{ . }}</h3>
+            {{ end }}
+            <h2 class="mb-6 text-4xl text-white font-display font-bold uppercase">{{ $.title }}</h2>
+            {{ with .description }}
+            <p class="mb-8 text-xl text-white">{{ . }}</p>
+            {{ end }}
 
-                {{ with .icons }}
-                <div class="grid grid-cols-2 gap-4 mb-8">
-                    {{ range . }}
-                    <div class="flex">
-                        <div class="w-14 h-14 flex-shrink-0 rounded mr-4 bg-gray-200 bg-opacity-50"></div>
-                        <p class="max-w-min text-lg text-white font-display font-bold uppercase">{{ .label }}</p>
-                    </div>
-                    {{ end }}
+            {{ with .icons }}
+            <div class="grid grid-cols-2 gap-4 mb-8">
+                {{ range . }}
+                <div class="flex">
+                    <div class="w-14 h-14 flex-shrink-0 rounded mr-4 bg-gray-200 bg-opacity-50"></div>
+                    <p class="max-w-min text-lg text-white font-display font-bold uppercase">{{ .label }}</p>
                 </div>
                 {{ end }}
             </div>
-            <div class="flex -m-3">
-                {{ range .buttons }}
-                <a class="button m-3 {{ .class }}" href="{{ .link }}">{{ .label }}</a>
-                {{ end }}
-            </div>
+            {{ end }}
+        </div>
+        <div class="flex -m-3">
+            {{ range .buttons }}
+            <a class="button m-3 {{ .class }}" href="{{ .link }}">{{ .label }}</a>
+            {{ end }}
         </div>
     </div>
-</section>
+</div>
+
 {{ end }}

@@ -1,5 +1,0 @@
-{{ if reflect.IsMap .context }}
-{{ partial .partial .context }}
-{{ else if .context }}
-{{ with index site.Data .partial .context }}{{ partial $.partial . }}{{ end }}
-{{ end }}

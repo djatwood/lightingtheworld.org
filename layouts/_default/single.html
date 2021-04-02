@@ -12,7 +12,7 @@
 {{ else }}
 {{ range .Params.blocks }}
 {{ if fileExists (printf "layouts/partials/%s.html" .kind) }}
-{{ partial "block-or" (dict "partial" .kind "context" .) }}
+{{ partial "block" . }}
 {{ else }}
 {{ errorf `"%s": partial %s does not exist` $.File.Path .kind }}
 {{ end }}

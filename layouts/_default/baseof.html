@@ -36,7 +36,9 @@
     </main>
     {{ end }}
 
-    {{ partial "block-or" (dict "partial" "cta" "context" .Params.cta) }}
+    {{ with .Params.cta }}
+    {{ partial "block" (merge (dict "kind" "cta") .) }}
+    {{ end }}
 
     {{ partialCached "site/footer" . }}
 </body>
