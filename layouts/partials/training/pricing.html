@@ -1,33 +1,31 @@
 {{ with index site.Data.pricing .show }}
-<section class="py-32 bg-secondary">
-    <div class="content-width">
-        {{ with $.title }}
-        <h2 class="heading-light mb-8 text-5xl text-center font-bold">{{ . }}</h2>
-        {{ end }}
-        <div class="grid grid-cols-3 gap-8 mb-8">
-            {{ range . }}
-            {{ with .break }}
-            <div class="col-span-full"></div>
-            {{ else }}
-            <div class="rounded bg-white">
-                <div class="p-8">
-                    <h3 class="mr-16 mb-2 text-lg text-accent font-display uppercase">{{ .title }}</h3>
-                    <p class="heading mb-2 text-6xl font-bold">${{ .price }}</p>
-                    <p> Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. </p>
+<div class="content-width py-32">
+    {{ with $.title }}
+    <h2 class="heading-light mb-8 text-5xl text-center font-bold">{{ . }}</h2>
+    {{ end }}
+    <div class="grid grid-cols-3 gap-8 mb-8">
+        {{ range . }}
+        {{ with .break }}
+        <div class="col-span-full"></div>
+        {{ else }}
+        <div class="rounded bg-white">
+            <div class="p-8">
+                <h3 class="mr-16 mb-2 text-lg text-accent font-display uppercase">{{ .title }}</h3>
+                <p class="heading mb-2 text-6xl font-bold">${{ .price }}</p>
+                <p> Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. </p>
 
-                    <div class="-mx-3">
-                        <a class="button m-3" href="">Select</a>
-                        <a class="button m-3" href="">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="px-8 py-3 border-t">
-                    <p class="text-xs text-accent font-display font-bold uppercase">Included Topics</p>
+                <div class="-mx-3">
+                    <a class="button m-3" href="">Select</a>
+                    <a class="button m-3" href="">Learn More</a>
                 </div>
             </div>
-            {{ end }}
-            {{ end }}
+
+            <div class="px-8 py-3 border-t">
+                <p class="text-xs text-accent font-display font-bold uppercase">Included Topics</p>
+            </div>
         </div>
+        {{ end }}
+        {{ end }}
     </div>
-</section>
+</div>
 {{ end }}

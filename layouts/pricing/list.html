@@ -17,7 +17,7 @@
 {{ end }}
 <input id="{{ $show }}" class="tab" type="radio" name="tabs" {{ $c | safeHTMLAttr }}>
 <div class="content">
-    {{ partial "training/pricing" (dict "show" $show) }}
+    {{ partial "block" (dict "kind" "training/pricing" "background" (dict "color" "#f2ebdb") "context" (dict "show" $show)) }}
 </div>
 
 {{ end }}

@@ -83,6 +83,8 @@ blocks:
         - label: Pricing
           link:  
  - kind: training/pricing
+   background:
+    color: "#7d3654"
    context: 
     title: Pricing
     show: "individuals"
