@@ -13,7 +13,13 @@
     </div>
     <div>
         <!-- img -->
-        <div class="h-160 rounded mb-8 bg-gray-50 bg-opacity-50"></div>
+        <div class="h-160 mb-8 rounded overflow-hidden">
+            {{ with .image }}
+            {{ partial "img-fill" (dict "src" . "h" 640 "w" 640) }}
+            {{ else }}
+            <div class="h-full bg-gray-50 bg-opacity-50"></div>
+            {{ end }}
+        </div>
         {{ range last (div (len .options) 2) .options }}
         {{ partial "training/option" . }}
         {{ end }}

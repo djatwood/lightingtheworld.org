@@ -11,13 +11,13 @@ blocks:
     summary: Choose from our range of online courses to learn about natural remedies, a healthy lifestyle, beating back disease, and community health education all with personalized guidance.
     nav: 
       - label: Health & Wellness
-        icon: 
+        icon: img/health-and-wellness.svg
       - label: Natural Remedies
-        icon: 
+        icon: img/natural-remedies.svg
       - label: Herbal Remedies
-        icon: 
+        icon: img/herbal-remedies.svg
       - label: Home Remedies
-        icon: 
+        icon: img/home-remedies.svg
  - kind: training/feature
    context:
     title: Complete Training To equip you to minister to Your community 
@@ -30,13 +30,17 @@ blocks:
       link: "#"
     icons: 
     - description: Learn preventive medicine through the principles of health and natural healing 
+      icon: img/herbal-remedies.svg
     - description: Receive step-by-step instruction of our most practical classes in hydrotherapy, massage and vegetarian cooking
+      icon: img/clipboard.svg
     - description: Learn how to bring health to your community through a variety of outreach methods
+      icon: img/megaphone.svg
     - description: Learn opportunities for lay members to spread the gospel through various types of health ministries
+      icon: img/compass.svg
  - kind: cta
    background:
     color: "#f2dbb4"
-    image: img/hydro-bg.png
+    image: img/individual-instructor.png
     blend: overlay
    context: 
     title:  Level up to leadership 
@@ -53,14 +57,14 @@ blocks:
     gradient: "to right bottom, #46bb8b, #15774f"
    context:
     align: right
-    image: 
+    image: img/individual-feature.jpg
     title: Learn Just What You Want
     subtitle: Training Options
     description: In ac felis quis tortor malesuada pretium. Phasellus dolor. In turpis. Pellentesque et malesuada fames ac turpis egestas. 
     options: 
       - title: Herbal Remedies
         description: Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, nunc et lorem.
-        icon: 
+        icon: img/herbal-remedies.svg
         buttons:
         - label: Learn More
           link:  
@@ -68,7 +72,7 @@ blocks:
           link:  
       - title: Home Remedies 
         description: Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, nunc et lorem.
-        icon: 
+        icon: img/home-remedies.svg
         buttons:
         - label: Learn More
           link:  
@@ -76,7 +80,7 @@ blocks:
           link:  
       - title: Natural Remedies
         description: Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas pede varius nisi, nunc et lorem.
-        icon: 
+        icon: img/natural-remedies.svg
         buttons:
         - label: Learn More
           link:  

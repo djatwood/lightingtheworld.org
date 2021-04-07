@@ -27,9 +27,8 @@ body {
 }
 
 svg {
-    @apply fill-current;
+    @apply h-full fill-current;
 }
-
 
 .tab {
     display: none;

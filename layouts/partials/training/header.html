@@ -8,9 +8,16 @@
             {{ with .nav }}
             <div class="grid sm:grid-cols-2 gap-4 mt-10">
                 {{ range . }}
-                <a class="heading flex max-w-min text-xl font-bold" href="{{ .link }}">
-                    <div class="w-14 h-14 flex-shrink-0 rounded mr-4 bg-gray-200 bg-opacity-50"></div>
-                    <span class="text-icon opacity-75">{{ .label }}</span>
+                <a class="heading flex max-w-min mb-8 text-xl opacity-75 text-icon font-bold" href="{{ .link }}">
+                    <div class="flex justify-center items-center w-11 h-11 flex-shrink-0 mr-4">
+                        {{ with .icon }}
+                        {{ $svg := resources.Get . }}
+                        {{ $svg.Content | safeHTML}}
+                        {{ else }}
+                        <div class="w-full h-full rounded bg-gray-200 bg-opacity-50"></div>
+                        {{ end }}
+                    </div>
+                    <span class="leading-none">{{ .label }}</span>
                 </a>
                 {{ end }}
             </div>
