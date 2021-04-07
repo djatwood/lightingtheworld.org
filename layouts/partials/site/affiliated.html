@@ -1,16 +1,16 @@
 <p class="mb-4 text-accent-light font-display font-bold uppercase">Affiliated with these SDA institutions</p>
 <div class="flex items-center text-accent-light">
-    <div class="w-24 mr-12">
+    <div class="w-20 mr-12">
         {{ $img := resources.Get "img/sda-logo.svg" }}
         {{ $img.Content | safeHTML }}
     </div>
-    <div class="w-24 h-14 mr-12">
-        {{ partial "img-fit" (dict "src" "img/asi-logo.png" "w" 100 "h" 100 ) }}
+    <div class="w-20 h-14 mr-12">
+        {{ partial "img-fit" (dict "src" "img/asi-logo.png" "w" 80 "h" 80 ) }}
     </div>
-    <div class="w-24 h-14 mr-12">
-        {{ partial "img-fit" (dict "src" "img/oci-logo.png" "w" 100 "h" 100 ) }}
+    <div class="w-20 h-14 mr-12">
+        {{ partial "img-fit" (dict "src" "img/oci-logo.png" "w" 80 "h" 80 ) }}
     </div>
-    <div class="w-24 h-14">
-        {{ partial "img-fit" (dict "src" "img/wildwood-logo.png" "w" 100 "h" 100 ) }}
+    <div class="w-20 h-14">
+        {{ partial "img-fit" (dict "src" "img/wildwood-logo.png" "w" 100 "h" 80 ) }}
     </div>
 </div>
