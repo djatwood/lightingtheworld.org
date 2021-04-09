@@ -24,7 +24,8 @@
 (printf "background-repeat:%s" (or ($s.Get "this").background.repeat "no-repeat"))
 (printf "background-position:%s" (or ($s.Get "this").background.position "right"))
 (printf "background-size:%s" (or ($s.Get "this").background.size "contain"))
-(printf "background-blend-mode:%s" (or ($s.Get "this").background.blend "normal"))
+(printf "mix-blend-mode:%s" (or ($s.Get "this").background.blend "normal"))
+(printf "opacity:%f" (or ($s.Get "this").background.opacity "1"))
 )}}
 {{ $s.Add "class" "relative"}}
 {{ end }}
