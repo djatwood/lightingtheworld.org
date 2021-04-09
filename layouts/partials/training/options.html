@@ -15,7 +15,7 @@
         <!-- img -->
         <div class="h-160 mb-8 rounded overflow-hidden">
             {{ with .image }}
-            {{ partial "img-fill" (dict "src" . "h" 640 "w" 640) }}
+            {{ partial "img-fill" (dict "src" . "h" 640 "w" 640 "p" $.imagePosition) }}
             {{ else }}
             <div class="h-full bg-gray-50 bg-opacity-50"></div>
             {{ end }}

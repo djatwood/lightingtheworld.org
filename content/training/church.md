@@ -11,19 +11,22 @@ blocks:
     summary: Invite a team of LIGHT teachers to visit your church for a health emphasis weekend or a one-week intensive health evangelism training.
     nav:
       - label: Weekend Training
+        icon: img/calendar.svg
       - label: Ten Day Training
+        icon: img/calendar.svg
  - kind: training/options
    background: 
     gradient: "to right bottom, #85c7df, #2b8da5"
    context:
-    image: 
+    image: img/connect-with-your-community.jpg
+    imagePosition: left
     title: Get your church or organization UP to speed 
     subtitle: Weekend Training 
     description: Learn how to prevent disease through lifestyle intervention. Learn how to cook simple, healthy and delicious vegetarian recipes. 
     options: 
       - title: Health & Wellness
         description: Learn how to prevent disease through lifestyle intervention. Learn how to cook simple, healthy and delicious vegetarian recipes.
-        icon: 
+        icon: img/heart.svg
         buttons:
         - label: Learn More
           link:  
@@ -31,7 +34,7 @@ blocks:
           link:  
       - title: Home Remedies 
         description: Our team comes to your church for a hands on training in hydrotherapy and other home remedies for use against colds, flus and other viral infections. 
-        icon: 
+        icon: img/home-remedies.svg
         buttons:
         - label: Learn More
           link:  
@@ -39,7 +42,7 @@ blocks:
           link:  
       - title: Health Evangelism 
         description: Learn the importance and role of health education in reaching out local communities. Learn specific health outreach methods like the health expo, health & wellness clubs, cooking schools and more! 
-        icon: 
+        icon: img/megaphone.svg
         buttons:
         - label: Learn More
           link: 
@@ -49,21 +52,24 @@ blocks:
  - kind: cta
    background:
      color: "#0d3345"
-     image: img/hydro-bg.png
+     image: img/home-remedies-bw.png
+     position: 100% 80px
+     size: 46%
      blend: overlay
+     opacity: 0.6
    context:
     title: Thoroughly Equip your Congregation for service
     subtitle: Ten-Day Training certification
     description: In ac felis quis tortor malesuada pretium. Phasellus dolor. In turpis. Pellentesque et malesuada fames ac nunc et lorem turpis egestas. 
     icons:
     - label: Principles of health
-      icon: 
+      icon: img/health-and-wellness.svg
     - label: Natural remedies
-      icon: 
+      icon: img/natural-remedies.svg
     - label: Vegetarian Cooking
-      icon: 
+      icon: img/silverware.svg
     - label: Community Outreach
-      icon: 
+      icon: img/megaphone.svg
     buttons:
     - label: Learn More
       link: \#

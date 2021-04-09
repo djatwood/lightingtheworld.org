@@ -25,9 +25,16 @@
             {{ with .icons }}
             <div class="grid grid-cols-2 gap-4 mb-8">
                 {{ range . }}
-                <div class="flex">
-                    <div class="w-14 h-14 flex-shrink-0 rounded mr-4 bg-gray-200 bg-opacity-50"></div>
-                    <p class="max-w-min text-lg text-white font-display font-bold uppercase">{{ .label }}</p>
+                <div class="flex text-accent-light">
+                    <div class="w-11 h-11 flex-shrink-0 mr-4">
+                        {{ with .icon }}
+                        {{ $svg := resources.Get . }}
+                        {{ $svg.Content | safeHTML }}
+                        {{ else }}
+                        <div class="w-full h-full rounded bg-gray-200 bg-opacity-50"></div>
+                        {{ end }}
+                    </div>
+                    <p class="max-w-min text-lg font-display font-bold uppercase">{{ .label }}</p>
                 </div>
                 {{ end }}
             </div>
