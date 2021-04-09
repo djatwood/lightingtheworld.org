@@ -41,7 +41,6 @@ blocks:
    background:
     color: "#f2dbb4"
     image: img/individual-instructor.png
-    blend: overlay
    context: 
     title:  Level up to leadership 
     subtitle: Health & Wellness Instructor 
