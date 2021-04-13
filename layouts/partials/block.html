@@ -40,7 +40,7 @@
 <section {{ $class | safeHTMLAttr }} {{ $style | safeHTMLAttr }}>
     {{ with $s.Get "background-image" }}
     {{ $style := printf "style='%s'" (delimit ($s.Get "background-image" ) ";" ) }}
-    <div class="content-width absolute top-0 right-0 bottom-0 left-0" {{ $style | safeHTMLAttr }}></div>
+    <div class='{{if not ($s.Get "this").background.fullWidth}}content-width{{end}} absolute top-0 right-0 bottom-0 left-0' {{ $style | safeHTMLAttr }}></div>
     {{ end }}
 
     {{ partial .kind ($s.Get "this").context }}
