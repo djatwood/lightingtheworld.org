@@ -4,7 +4,7 @@
         {{ replace .title "\\n" "<br>" | safeHTML }}
     </h2>
     <div class="flex justify-center">
-        {{ range .Buttons }}
+        {{ range .buttons }}
         <a class="button mx-3 {{ .class }}" href="{{ .link }}">{{ .label }}</a>
         {{ end }}
     </div>

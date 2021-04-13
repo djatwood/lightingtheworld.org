@@ -11,3 +11,15 @@ hands on training:
     buttons:
       - label: Learn More
         link: \#
+start your training:
+  background:
+    color: "#0d3345"
+  context:
+    simple: true
+    title: Start Your \n Training
+    buttons:
+    - label: Sign Up
+      link: /sign-up
+      class: button-light text-white
+    - label: Pricing
+      link: /pricing
