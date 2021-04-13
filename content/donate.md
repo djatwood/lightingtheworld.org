@@ -2,9 +2,8 @@
 title: "Donate"
 date: 2021-03-25T22:50:24-04:00
 draft: false
+summary: Thank you very much for your interest in supporting us financially.
 ---
-
-Thank you very much for your interest in supporting us financially.
 
 We are a registered 501c3 corporation so your donations are tax-deductible!
 
