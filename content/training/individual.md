@@ -19,6 +19,13 @@ blocks:
       - label: Home Remedies
         icon: img/home-remedies.svg
  - kind: training/feature
+   background:
+    fullWidth: true
+    image: img/squares.png
+    position: right
+    size: cover
+    color: "#fdf8eb"
+    opacity: 1.0
    context:
     title: Complete Training To equip you to minister to Your community 
     subtitle: Health & Wellness Coach 
