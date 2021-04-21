@@ -1,12 +1,15 @@
-#page main h2 {
+#page main h2,
+#section .content h2 {
     @apply heading mt-6 mb-4 text-4xl;
 }
 
-#page main h2:first-child {
+#page main h2:first-child,
+#section .content h2:first-child {
     @apply mt-0;
 }
 
-#page main p {
+#page main p,
+#section .content p {
     @apply mb-3;
 }
 

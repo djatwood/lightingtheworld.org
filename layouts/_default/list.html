@@ -1,19 +1,33 @@
 {{ define "main" }}
-<main>
-    {{ partial "page-header" . }}
-    <div class="max-w-2xl py-20 mx-auto">
-        {{ range .Pages }}
-        <div class="mb-12">
-            <h2 class="heading text-4xl font-bold">
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-            </h2>
-            <p class="heading mb-2">
-                <span>By:</span> {{ .Params.author }}
-                <span>On:</span> {{ .Date.Format "January 2, 2006" }}
-            </p>
-            <p class="text-lg">{{ truncate 200 .Summary }}</p>
-        </div>
+{{ partial "page-header" . }}
+<div class="px-10">
+    <div class="content-width py-20 flex flex-row flex-nowrap">
+        {{ if gt (len .TableOfContents) 32 }}
+        <aside id="toc" class="mr-20 text-2xl text-accent-light uppercase">
+            {{ .TableOfContents }}
+        </aside>
         {{ end }}
+
+        <main>
+            <div class="max-w-2xl mx-auto">
+                <div class="content mb-8 text-lg text-body leading-relaxed">
+                    {{ .Content }}
+                </div>
+
+                {{ range .Pages }}
+                <div class="mb-12">
+                    <h2 class="heading text-4xl font-bold">
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </h2>
+                    <p class="heading mb-2">
+                        <span>By:</span> {{ .Params.author }}
+                        <span>On:</span> {{ .Date.Format "January 2, 2006" }}
+                    </p>
+                    <p class="text-lg">{{ truncate 200 .Summary }}</p>
+                </div>
+                {{ end }}
+            </div>
+        </main>
     </div>
-</main>
+</div>
 {{ end }}
