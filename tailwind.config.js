@@ -37,20 +37,20 @@ module.exports = {
             'md': '#dbe8eb',
             'page-header': '#9f3d68',
         }),
-        backgroundImage: _theme => ({
-            'hunter-green': 'linear-gradient(#47BC8C, #15774F)',
-            'indian-red': 'linear-gradient(#D95151, #8B3B3B)',
-            'mellow-yellow': 'linear-gradient(#FFD27E, #C49232)',
-            'sky-blue': 'linear-gradient(#86C8E0, #2B8DA5)',
-            'plum-red': 'linear-gradient(#803756, #5C2B40)',
-            'prussian-blue': 'linear-gradient(#0E4158, #0D3243)',
-        }),
         gradientColorStops: theme => ({
             ...theme('colors'),
             'primary': '#0e4158',
             'primary-dark': '#0d3345',
         }),
         extend: {
+            backgroundImage: {
+                'hunter-green': 'linear-gradient(#47BC8C, #15774F)',
+                'indian-red': 'linear-gradient(#D95151, #8B3B3B)',
+                'mellow-yellow': 'linear-gradient(#FFD27E, #C49232)',
+                'sky-blue': 'linear-gradient(#86C8E0, #2B8DA5)',
+                'plum-red': 'linear-gradient(#803756, #5C2B40)',
+                'prussian-blue': 'linear-gradient(#0E4158, #0D3243)',
+            },
             colors: {
                 'ice-blue': '#F4F9FF',
                 'pistachio-green': '#DBE8EB',
