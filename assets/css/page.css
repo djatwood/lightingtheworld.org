@@ -1,6 +1,6 @@
 #page main h2,
 #section .content h2 {
-    @apply heading mt-6 mb-4 text-4xl;
+    @apply heading mt-6 mb-4;
 }
 
 #page main h2:first-child,
@@ -14,5 +14,5 @@
 }
 
 #toc li {
-    @apply mb-4 font-display font-extrabold uppercase;
+    @apply mb-4 text-pigeon-blue text-lg font-display font-extrabold uppercase;
 }

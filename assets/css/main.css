@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply text-body font-light font-body;
+    @apply text-body text-regular font-light font-body;
 }
 
 .content-width {
@@ -16,6 +16,36 @@ body {
 
 .heading-light {
     @apply text-white font-display uppercase;
+}
+
+h1 {
+    @apply font-display font-extrabold uppercase;
+    font-size: 42px;
+}
+
+h2 {
+    @apply font-display font-extrabold uppercase;
+    font-size: 36px;
+}
+
+h3 {
+    @apply font-display font-extrabold uppercase;
+    font-size: 28px;
+}
+
+h4 {
+    @apply font-display uppercase;
+    font-size: 20px;
+}
+
+h5 {
+    @apply font-display font-bold uppercase;
+    font-size: 18px;
+}
+
+h6 {
+    @apply font-display font-extrabold uppercase;
+    font-size: 15px;
 }
 
 .button {
