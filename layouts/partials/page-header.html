@@ -1,12 +1,12 @@
-<header class="relative px-12 py-14 text-white bg-page-header">
+<header class="relative px-12 py-14 text-white bg-plum-red">
     {{ with .Params.header.background }}
     {{ $img := resources.Get .image }}
     {{ $img := $img.Fill (printf "2000x400 %s" .position) }}
-    <img class="absolute top-0 left-0 block w-full h-full object-cover" style="opacity:0.05" src="{{ $img.Permalink }}" alt="">
+    <img class="absolute top-0 left-0 block w-full h-full object-cover" style="opacity:0.1" src="{{ $img.Permalink }}" alt="">
     {{ end }}
 
     <div class="content-width relative z-10">
-        <h1 class="heading-light text-5xl mb-4 font-extrabold">{{ .Title }}</h1>
-        <p class="max-w-lg font-light text-2xl leading-relaxed">{{ .Summary }}</p>
+        <h1 class="text-white mb-4">{{ .Title }}</h1>
+        <p class="max-w-lg font-light text-lg leading-relaxed">{{ .Summary }}</p>
     </div>
 </header>
