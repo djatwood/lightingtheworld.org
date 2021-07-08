@@ -13,13 +13,14 @@ hands on training:
         link: \#
 start your training:
   background:
-    color: "#0d3345"
+    color: "#0D3243"
   context:
     simple: true
     title: Start Your \n Training
     buttons:
     - label: Sign Up
       link: /sign-up
-      class: button-light text-white
+      class: text-buttermilk-yellow border-buttermilk-yellow
     - label: Pricing
       link: /pricing
+      class: text-pink-red border-pink-red
