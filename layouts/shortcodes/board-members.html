@@ -1,0 +1,29 @@
+<div class="border border-powder-blue rounded">
+    {{ range $index, $item := $.Site.Data.board }}
+    {{$border := ""}}
+    {{ if gt $index 0 }}
+    {{$border = "border-t"}}
+    {{ end }}
+    <div class="p-8 {{ $border }} border-powder-blue">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-24 h-24 bg-gray-200 mr-4 rounded-full"></div>
+                <div>
+                    <h3>{{ .name }}</h3>
+                    <p>{{ .position }}</p>
+                </div>
+            </div>
+            <div class="text-6xl text-powder-blue">+</div>
+        </div>
+        {{/*  <div class="mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dolor augue, pulvinar vitae risus vehicula,
+            vestibulum aliquet lorem. Nam placerat diam dui, eget bibendum leo finibus id. Etiam ultricies augue lectus,
+            et lacinia turpis pretium a. Duis volutpat ante magna, sed porta massa scelerisque sed. Etiam quis
+            scelerisque urna. Proin id porttitor quam. Suspendisse quis congue nulla, auctor pretium mauris. Cras cursus
+            cursus augue, et sodales justo gravida non. Curabitur a fringilla justo, at pretium augue. Nulla sed varius
+            ex. Proin dignissim nibh vel nibh maximus semper. Suspendisse lobortis, felis condimentum varius vulputate,
+            neque est venenatis urna, et viverra ex felis quis risus.
+        </div>  */}}
+    </div>
+    {{ end }}
+</div>

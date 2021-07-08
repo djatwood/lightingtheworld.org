@@ -8,13 +8,7 @@ module.exports = {
             'display': ['Work Sans', 'sans-serif'],
             'body': ['Open Sans', 'sans-serif'],
         },
-        fontSize: {
-            xs: '13px',
-            base: '1rem',
-            sm: '17px',
-            regular: '21px',
-            lg: '24px',
-        },
+
         textColor: theme => ({
             ...theme('colors'),
             'light': '#FFF7E3',
@@ -43,6 +37,13 @@ module.exports = {
             'primary-dark': '#0d3345',
         }),
         extend: {
+            fontSize: {
+                xs: '13px',
+                base: '1rem',
+                sm: '17px',
+                regular: '21px',
+                lg: '24px',
+            },
             backgroundImage: {
                 'hunter-green': 'linear-gradient(#47BC8C, #15774F)',
                 'indian-red': 'linear-gradient(#D95151, #8B3B3B)',

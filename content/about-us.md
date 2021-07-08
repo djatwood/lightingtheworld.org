@@ -30,5 +30,4 @@ To create a unified global network of health ministries
 
 ## Board
 
-TODO
-
+{{< board-members >}}
