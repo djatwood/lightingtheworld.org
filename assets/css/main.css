@@ -48,8 +48,17 @@ h6 {
     font-size: 15px;
 }
 
-.button {
+.button,
+.button-large {
     @apply inline-block px-6 py-2.5 border-3 rounded-lg font-display font-bold tracking-wide uppercase;
+}
+
+.button {
+    @apply text-base;
+}
+
+.button-large {
+    font-size: 18px;
 }
 
 svg {
