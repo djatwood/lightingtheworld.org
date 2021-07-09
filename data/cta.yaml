@@ -18,9 +18,9 @@ start your training:
     simple: true
     title: Start Your \n Training
     buttons:
-    - label: Sign Up
-      link: /sign-up
-      class: text-buttermilk-yellow border-buttermilk-yellow
-    - label: Pricing
-      link: /pricing
-      class: text-pink-red border-pink-red
+      - label: Sign Up
+        link: /sign-up
+        color: buttermilk-yellow
+      - label: Pricing
+        link: /pricing
+        color: pink-red
