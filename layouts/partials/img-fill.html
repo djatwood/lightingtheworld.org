@@ -3,8 +3,8 @@
     {{ $1x := $img }}
     {{ $2x := $img }}
     {{ if and .w .h }}
-    {{ $1x = $img.Fill (printf "%dx%d" .w .h) }}
-    {{ $2x = $img.Fill (printf "%dx%d %s" (mul .w 2) (mul .h 2) .p) }}
+    {{ $1x = $img.Fill (printf "%dx%d jpg" .w .h) }}
+    {{ $2x = $img.Fill (printf "%dx%d %s jpg" (mul .w 2) (mul .h 2) .p) }}
     {{ end }}
     <source srcset="{{ $1x.Permalink }} {{ $1x.Width }}w, {{ $2x.Permalink }} 2x">
     <img class="w-full h-full object-cover" src="{{ $1x.Permalink }}" alt="{{ .alt }}">

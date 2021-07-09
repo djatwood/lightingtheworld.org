@@ -18,7 +18,7 @@ blocks:
    background: 
     gradient: "to right bottom, #86C8E0, #2B8DA5"
    context:
-    image: img/connect-with-your-community.jpg
+    image: img/church-training-weekend-image.png
     imagePosition: left
     title: Get your church or organization UP to speed 
     subtitle: Weekend Training 
@@ -61,9 +61,7 @@ blocks:
  - kind: cta
    background:
      color: "#0D3243"
-     image: img/home-remedies-bw.png
-     position: 100% 80px
-     size: 46%
+     image: img/church-training-ten-day-image.png
      blend: overlay
      opacity: 0.6
    context:
