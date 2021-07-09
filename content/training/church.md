@@ -16,7 +16,7 @@ blocks:
         icon: img/calendar.svg
  - kind: training/options
    background: 
-    gradient: "to right bottom, #85c7df, #2b8da5"
+    gradient: "to right bottom, #86C8E0, #2B8DA5"
    context:
     image: img/connect-with-your-community.jpg
     imagePosition: left
@@ -30,28 +30,37 @@ blocks:
         buttons:
         - label: Learn More
           link:  
+          color: magenta-red
         - label: Pricing
           link:  
+          color: magenta-red
+          background: true
       - title: Home Remedies 
         description: Our team comes to your church for a hands on training in hydrotherapy and other home remedies for use against colds, flus and other viral infections. 
         icon: img/home-remedies.svg
         buttons:
         - label: Learn More
           link:  
+          color: magenta-red
         - label: Pricing
           link:  
+          color: magenta-red
+          background: true
       - title: Health Evangelism 
         description: Learn the importance and role of health education in reaching out local communities. Learn specific health outreach methods like the health expo, health & wellness clubs, cooking schools and more! 
         icon: img/megaphone.svg
         buttons:
         - label: Learn More
           link: 
+          color: magenta-red
         - label: Pricing
           link: 
+          color: magenta-red
+          background: true
 
  - kind: cta
    background:
-     color: "#0d3345"
+     color: "#0D3243"
      image: img/home-remedies-bw.png
      position: 100% 80px
      size: 46%
@@ -73,18 +82,21 @@ blocks:
     buttons:
     - label: Learn More
       link: \#
+      color: pink-red
     - label: Sign Up
       link: \#
       class: button-light text-white
+      color: magenta-red
+      background: true
 cta: 
   background: 
-   color: "#0c4e33"
+   color: "#086243"
   context: 
     simple: true
     title: Get training for your Church\nOr organization today!
     buttons:
     - label: Sign Up
       link: \#
-      class: button-light text-white
+      color: buttermilk-yellow
 ---
 

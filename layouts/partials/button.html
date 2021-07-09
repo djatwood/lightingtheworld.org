@@ -1,0 +1,9 @@
+{{ $color := "" }}
+{{ if .color }}
+{{ if .background }}
+{{ $color = (printf "text-white border-%s bg-%s" .color .color) }}
+{{ else }}
+{{$color = (printf "text-%s border-%s" .color .color) }}
+{{ end }}
+{{ end }}
+<a href="{{ .link }}" class="button {{ .class }} {{$color}}">{{ .label }}</a>

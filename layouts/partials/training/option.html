@@ -7,10 +7,18 @@
         <div class="w-full h-full rounded bg-gray-200"></div>
         {{ end }}
     </div>
-    <h4 class="heading text-xl">Training Option</h4>
-    <h3 class="heading mb-4 text-3xl font-extrabold">{{ .title }}</h3>
-    <p class="mb-4 text-xl">{{ .description }}</p>
+    <h4>Training Option</h4>
+    <h2 class="mb-4">{{ .title }}</h2>
+    <p class="mb-4 text-regular">{{ .description }}</p>
     {{ range .buttons }}
-    <a href="{{ .link }}" class="button">{{ .label }}</a>
+    {{ $color := "" }}
+    {{ if .color }}
+    {{ if .background }}
+    {{ $color = (printf "text-white border-%s bg-%s" .color .color) }}
+    {{ else }}
+    {{$color = (printf "text-%s border-%s" .color .color) }}
+    {{ end }}
+    {{ end }}
+    <a href="{{ .link }}" class="button {{$color}}">{{ .label }}</a>
     {{ end }}
 </div>

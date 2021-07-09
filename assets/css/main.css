@@ -18,6 +18,15 @@ body {
     @apply text-white font-display uppercase;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: normal;
+}
+
 h1 {
     @apply font-display font-extrabold uppercase;
     font-size: 42px;
