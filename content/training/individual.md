@@ -24,7 +24,7 @@ blocks:
     image: img/squares.png
     position: right
     size: cover
-    color: "#fdf8eb"
+    color: "#FDF7EB"
     opacity: 1.0
    context:
     title: Complete Training To equip you to minister to Your community 
@@ -33,8 +33,11 @@ blocks:
     buttons:
     - label: See Curriculum
       link: "#"
+      color: magenta-red
     - label: Pricing
       link: "#"
+      color: magenta-red
+      background: true
     icons: 
     - description: Learn preventive medicine through the principles of health and natural healing 
       icon: img/herbal-remedies.svg
@@ -46,7 +49,7 @@ blocks:
       icon: img/compass.svg
  - kind: cta
    background:
-    color: "#f2dbb4"
+    color: "#F2E0B7"
     image: img/individual-instructor.png
    context: 
     title:  Level up to leadership 
@@ -60,7 +63,7 @@ blocks:
       class: button-light text-white
  - kind: training/options
    background:
-    gradient: "to right bottom, #46bb8b, #15774f"
+    gradient: "to right bottom, #47BC8C, #15774F"
    context:
     align: right
     image: img/individual-feature.jpg
@@ -94,7 +97,7 @@ blocks:
           link:  
  - kind: training/pricing
    background:
-    color: "#7d3654"
+    gradient: "to right bottom, #803756, #5C2B40"
    context: 
     title: Pricing
     show: "individuals"
