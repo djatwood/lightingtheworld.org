@@ -1,0 +1,10 @@
+social: 
+  - name: facebook
+    url: "#"
+    icon: img/nav-icon-facebook.svg
+  - name: twitter
+    url: "#"
+    icon: img/nav-icon-twitter.svg
+  - name: instagram
+    url: "#"
+    icon: img/nav-icon-instagram.svg
