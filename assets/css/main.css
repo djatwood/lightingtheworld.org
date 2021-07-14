@@ -67,7 +67,7 @@ h6 {
 }
 
 .button-large {
-    font-size: 18px;
+    @apply text-button-lg;
 }
 
 svg {

@@ -43,6 +43,7 @@ module.exports = {
                 sm: '17px',
                 regular: '21px',
                 lg: '24px',
+                'button-lg': '18px'
             },
             backgroundImage: {
                 'hunter-green': 'linear-gradient(#47BC8C, #15774F)',
