@@ -2,6 +2,7 @@ hands on training:
   background:
     color: "#0d3345"
     image: "img/cta-earth.svg"
+    size: auto 140%
   context:
     title: Looking for hands-on experience?
     subtitle: On-site training options
