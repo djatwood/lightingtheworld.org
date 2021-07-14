@@ -9,6 +9,7 @@ blocks:
     title: Transform your church Into a beacon of Health For Your Community
     subtitle: Church Training
     summary: Invite a team of LIGHT teachers to visit your church for a health emphasis weekend or a one-week intensive health evangelism training.
+    image: 'img/church-training-hero-image.png'
     nav:
       - label: Weekend Training
         icon: img/calendar.svg

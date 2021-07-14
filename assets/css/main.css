@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply text-body text-regular font-light font-body;
+    @apply text-body text-regular font-light font-body overflow-x-hidden;
 }
 
 .content-width {

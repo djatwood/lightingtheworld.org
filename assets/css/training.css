@@ -1,0 +1,5 @@
+#training-header .image-container {
+    width: 140%;
+    transform: translate(-50%, -60%);
+    @apply top-1/2 left-1/2;
+}

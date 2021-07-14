@@ -1,4 +1,4 @@
-<header class="pt-20 pb-16">
+<header id="training-header" class="pt-20 pb-16">
     <div class="content-width flex">
         <div class="max-w-2xl">
             <h4 class="mb-2 text-magenta-red">{{ .subtitle }}</h4>
@@ -8,7 +8,8 @@
             {{ with .nav }}
             <div class="grid sm:grid-cols-2 gap-4 mt-10">
                 {{ range . }}
-                <a class="flex items-center max-w-min mb-8 text-button-lg text-pigeon-blue font-display font-bold uppercase" href="{{ .link }}">
+                <a class="flex items-center max-w-min mb-8 text-button-lg text-pigeon-blue font-display font-bold uppercase"
+                    href="{{ .link }}">
                     <div class="flex justify-center items-center w-11 h-11 flex-shrink-0 mr-4">
                         {{ with .icon }}
                         {{ $svg := resources.Get . }}
@@ -23,8 +24,14 @@
             </div>
             {{ end }}
         </div>
-        <div>
-            hi
+        {{ with .image }}
+        <div class="relative w-full">
+            <div class="image-container absolute">
+                {{ $img := resources.Get . }}
+                {{ $img = $img.Fit "860x860"}}
+                <img class="" src="{{ $img.Permalink }}" alt="">
+            </div>
         </div>
+        {{ end }}
     </div>
 </header>
