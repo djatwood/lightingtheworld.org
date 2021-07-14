@@ -16,9 +16,11 @@
 {{ $s.Add "style" (slice (printf "background-color:%s" .))}}
 {{ end }}
 
-{{ if ($s.Get "this").background.image }}
+{{ with ($s.Get "this").background.image }}
 {{ $img := resources.Get ($s.Get "this").background.image }}
+{{ if ne (path.Ext .) ".svg"}}
 {{ $img = $img.Fit "2000x600" }}
+{{ end }}
 {{ $s.Set "background-image" (slice
 (printf "background-image:url(%s)" $img.Permalink )
 (printf "background-repeat:%s" (or ($s.Get "this").background.repeat "no-repeat"))
@@ -40,7 +42,8 @@
 <section {{ $class | safeHTMLAttr }} {{ $style | safeHTMLAttr }}>
     {{ with $s.Get "background-image" }}
     {{ $style := printf "style='%s'" (delimit ($s.Get "background-image" ) ";" ) }}
-    <div class='{{if not ($s.Get "this").background.fullWidth}}content-width{{end}} absolute top-0 right-0 bottom-0 left-0' {{ $style | safeHTMLAttr }}></div>
+    <div class='{{if not ($s.Get "this").background.fullWidth}}content-width{{end}} absolute top-0 right-0 bottom-0 left-0'
+        {{ $style | safeHTMLAttr }}></div>
     {{ end }}
 
     {{ partial .kind ($s.Get "this").context }}
