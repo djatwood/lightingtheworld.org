@@ -1,9 +1,12 @@
 <footer class="py-20 bg-gradient-to-b from-primary to-primary-dark text-footer">
     <div class="flex flex-nowrap justify-between content-width">
         <div class="max-w-sm">
-            <div class="mb-6">
+            <div class="flex mb-6">
                 {{ range .Site.Data.footer.social }}
-                {{ .name }}
+                <a class="w-10 mr-8" href="{{ .url }}">
+                    {{ $img := resources.Get .icon }}
+                    {{ $img.Content | safeHTML }}
+                </a>
                 {{ end }}
             </div>
             <h2 class="mb-6 text-4xl text-white font-bold uppercase">Lay Institute for Global Health Training</h2>

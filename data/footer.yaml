@@ -1,10 +1,13 @@
 social:
   - name: facebook
-    url:
-  - name: twiter
-    url:
+    url: "#"
+    icon: img/footer-facebook.svg
+  - name: twitter
+    url: "#"
+    icon: img/footer-twitter.svg
   - name: instagram
-    url:
+    url: "#"
+    icon: img/footer-instagram.svg
 
 menu:
   - label: Individual Training
