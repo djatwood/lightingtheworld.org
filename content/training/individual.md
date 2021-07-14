@@ -9,6 +9,7 @@ blocks:
     title: Find Deeper knowledge in Health and Wellness While learning online
     subtitle: Individual Training
     summary: Choose from our range of online courses to learn about natural remedies, a healthy lifestyle, beating back disease, and community health education all with personalized guidance.
+    image: 'img/ind-training-hero-image.png'
     nav: 
       - label: Health & Wellness
         icon: img/health-and-wellness.svg
@@ -21,11 +22,10 @@ blocks:
  - kind: training/feature
    background:
     fullWidth: true
-    image: img/squares.png
-    position: right
-    size: cover
+    image: img/ind-training-shape.svg
+    position: 120% 50%
+    size: auto 140%
     color: "#FDF7EB"
-    opacity: 1.0
    context:
     title: Complete Training To equip you to minister to Your community 
     subtitle: Health & Wellness Coach 
@@ -50,7 +50,7 @@ blocks:
  - kind: cta
    background:
     color: "#F2E0B7"
-    image: img/individual-instructor.png
+    image: img/ind-training-leadership-image.png
    context: 
     title:  Level up to leadership 
     subtitle: Health & Wellness Instructor 
@@ -66,7 +66,7 @@ blocks:
     gradient: "to right bottom, #47BC8C, #15774F"
    context:
     align: right
-    image: img/individual-feature.jpg
+    image: img/ind-training-options-image.png
     title: Learn Just What You Want
     subtitle: Training Options
     description: In ac felis quis tortor malesuada pretium. Phasellus dolor. In turpis. Pellentesque et malesuada fames ac turpis egestas. 
