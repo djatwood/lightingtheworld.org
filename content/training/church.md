@@ -89,7 +89,7 @@ blocks:
       background: true
 cta: 
   background: 
-   color: "#086243"
+   color: "forest-green"
   context: 
     simple: true
     title: Get training for your Church\nOr organization today!

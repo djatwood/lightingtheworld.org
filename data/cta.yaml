@@ -1,6 +1,6 @@
 hands on training:
   background:
-    color: "#0d3345"
+    color: "denim-blue"
     image: "img/cta-earth.svg"
     size: auto 140%
   context:
@@ -12,7 +12,7 @@ hands on training:
         link: \#
 start your training:
   background:
-    color: "#0D3243"
+    color: "denim-blue"
   context:
     simple: true
     title: Start Your \n Training

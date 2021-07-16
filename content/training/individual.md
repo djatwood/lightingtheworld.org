@@ -25,7 +25,7 @@ blocks:
     image: img/ind-training-shape.svg
     position: 120% 50%
     size: auto 140%
-    color: "#FDF7EB"
+    color: "buttermilk-yellow"
    context:
     title: Complete Training To equip you to minister to Your community 
     subtitle: Health & Wellness Coach 
@@ -49,7 +49,7 @@ blocks:
       icon: img/compass.svg
  - kind: cta
    background:
-    color: "#F2E0B7"
+    color: "peach-yellow"
     image: img/ind-training-leadership-image.png
    context: 
     title:  Level up to leadership 
