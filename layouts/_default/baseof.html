@@ -12,13 +12,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    {{ $scratch := newScratch }}
-    {{ range (readDir "./assets/css/" ) }}
-    {{ $sheet := resources.Get (printf "css/%s" .Name) }}
-    {{ $scratch.Add "css" (slice $sheet) }}
-    {{ end }}
-
-    {{ $css := $scratch.Get "css" | resources.Concat "css/bundle.css" | postCSS }}
+    {{ $css := resources.Match "css/*" | resources.Concat "css/bundle.css" | postCSS }}
     {{ if .Site.IsServer }}
     <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
     {{ else }}
