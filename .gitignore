@@ -5,3 +5,5 @@ node_modules/
 resources/_gen/assets
 
 public/
+
+hugo_stats.json
