@@ -13,6 +13,14 @@
     @apply mb-3;
 }
 
+#toc {
+    @apply sticky top-4;
+}
+
 #toc li {
-    @apply mb-4 text-pigeon-blue text-lg font-display font-extrabold uppercase;
+    @apply mb-4 text-powder-blue text-lg font-display font-extrabold uppercase;
+}
+
+#toc a {
+    @apply transition-colors
 }
