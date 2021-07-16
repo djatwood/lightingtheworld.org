@@ -9,3 +9,6 @@ blog = "/blog/:year/:month/:filename/"
 author = "author"
 category = "categories"
 tag = "tags"
+
+[build]
+writeStats = true
