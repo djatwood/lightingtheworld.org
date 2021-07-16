@@ -1,6 +1,6 @@
 {{ $s := newScratch }}
 
-{{ $s.Set "class" (or .class "") }}
+{{ $s.Set "class" slice }}
 {{ $s.Set "style" slice }}
 
 {{/* Use provided context or context from data */}}
@@ -12,11 +12,15 @@
 {{ end }}
 {{ end }}
 
+{{ with ($s.Get "this").class }}
+{{ $s.Add "style" (split . " ") }}
+{{ end }}
+
 {{ with ($s.Get "this").background.color }}
 {{ if hasPrefix . "#" }}
 {{ $s.Add "style" (slice (printf "background-color:%s" .))}}
 {{ else }}
-{{ $s.Add "class" (printf "bg-%s" .) }}
+{{ $s.Add "class" (slice (printf "bg-%s" .)) }}
 {{ end }}
 {{ end }}
 
@@ -33,7 +37,7 @@
 (printf "mix-blend-mode:%s" (or ($s.Get "this").background.blend "normal"))
 (printf "opacity:%f" (or ($s.Get "this").background.opacity 1.0))
 )}}
-{{ $s.Add "class" "relative"}}
+{{ $s.Add "class" (slice "relative")}}
 {{ end }}
 
 
@@ -41,7 +45,7 @@
 {{ $s.Add "style" (slice (printf "background-image:linear-gradient(%s)" .)) }}
 {{ end }}
 
-{{ $class := printf "class='%s'" ($s.Get "class") }}
+{{ $class := printf "class='%s'" (delimit ($s.Get "class") " ") }}
 {{ $style := printf "style='%s'" (delimit ($s.Get "style") ";" ) }}
 <section {{ $class | safeHTMLAttr }} {{ $style | safeHTMLAttr }}>
     {{ with $s.Get "background-image" }}
