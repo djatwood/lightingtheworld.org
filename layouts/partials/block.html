@@ -13,7 +13,11 @@
 {{ end }}
 
 {{ with ($s.Get "this").background.color }}
+{{ if hasPrefix . "#" }}
 {{ $s.Add "style" (slice (printf "background-color:%s" .))}}
+{{ else }}
+{{ $s.Add "class" (printf "bg-%s" .) }}
+{{ end }}
 {{ end }}
 
 {{ with ($s.Get "this").background.image }}
