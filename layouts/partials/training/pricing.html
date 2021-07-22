@@ -1,4 +1,8 @@
-{{ with index site.Data.pricing .show }}
+{{ $options := .options }}
+{{ with .data }}
+{{ $options = index site.Data.pricing . }}
+{{ end }}
+{{ with $options }}
 <div class="content-width py-32">
     {{ with $.title }}
     <h2 class="mb-8 text-center text-white">{{ . }}</h2>
@@ -11,13 +15,13 @@
         <div class="rounded bg-white">
             <div class="p-8">
                 <h4 class="mr-16 mb-2">{{ .title }}</h3>
-                <p class="heading mb-2 text-6xl font-bold">${{ .price }}</p>
-                <p class="text-small"> Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. </p>
+                    <p class="heading mb-2 text-6xl font-bold">${{ .price }}</p>
+                    <p class="text-small"> Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. </p>
 
-                <div class="-mx-3">
-                    <a class="button m-3" href="">Select</a>
-                    <a class="button m-3" href="">Learn More</a>
-                </div>
+                    <div class="-mx-3">
+                        <a class="button m-3" href="">Select</a>
+                        <a class="button m-3" href="">Learn More</a>
+                    </div>
             </div>
 
             <div class="px-8 py-3 border-t">

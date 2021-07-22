@@ -73,15 +73,3 @@ h6 {
 svg {
     @apply h-full fill-current;
 }
-
-.tab {
-    display: none;
-}
-
-.tab+.content {
-    display: none;
-}
-
-.tab:checked+.content {
-    display: block;
-}

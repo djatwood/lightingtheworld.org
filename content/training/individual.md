@@ -100,7 +100,7 @@ blocks:
     gradient: "to right bottom, #803756, #5C2B40"
    context: 
     title: Pricing
-    show: "individuals"
+    data: "individuals"
 cta:
   context: hands on training
 ---

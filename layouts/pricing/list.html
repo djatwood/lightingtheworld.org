@@ -1,25 +1,28 @@
 {{ define "main" }}
 {{ partial "page-header" . }}
 
-<div class="content-width flex pt-20">
-    {{ $tabs := slice }}
-    {{ range $show, $_ := .Site.Data.pricing }}
-    {{ $tabs = $tabs | append $show }}
-    {{ end }}
-    {{ range sort $tabs "" "desc" }}
-    <label for="{{ . }}" class="px-4 py-4 border border-button border-b-0 rounded rounded-b-none mr-2 cursor-pointer">{{ . | title }}</label>
-    {{ end }}
-</div>
-{{ range $index, $show := $tabs }}
-{{ $c := "" }}
-{{ if eq $show "individuals" }}
-{{ $c = "checked" }}
-{{ end }}
-<input id="{{ $show }}" class="tab" type="radio" name="tabs" {{ $c | safeHTMLAttr }}>
-<div class="content">
-    {{ partial "block" (dict "kind" "training/pricing" "background" (dict "color" "buttermilk-yellow") "context" (dict "show" $show)) }}
-</div>
-
+{{ $keys := slice }}
+{{ range $key, $_ := .Site.Data.pricing }}
+{{ $keys = $keys | append $key }}
 {{ end }}
 
+<div class="tabs relative bg-transparent -my-16 z-20">
+    <div class="content-width flex">
+        {{ range sort $keys "" "desc" }}
+        <button
+            class="tab-controller px-4 py-4 border border-button border-b-0 rounded rounded-b-none mr-2 cursor-pointer bg-buttermilk-yellow"
+            data-id="{{ . }}">
+            {{ . | title }}
+        </button>
+        {{ end }}
+    </div>
+    {{ range $index, $key := (sort $keys "" "desc") }}
+    <div id="tab-{{ . }}" class="tab {{ if eq $index 0}}active{{end}} bg-buttermilk-yellow">
+        {{ partial "block" (dict
+        "kind" "training/pricing"
+        "context" (dict "data" $key)
+        ) }}
+    </div>
+    {{ end }}
+</div>
 {{ end }}
