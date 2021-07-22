@@ -30,6 +30,7 @@ blocks:
     title: Complete Training To equip you to minister to Your community 
     subtitle: Health & Wellness Coach 
     description: The Health & Wellness Coach training is a 125-hour online certification course designed to train lay members with the knowledge and practical experience necessary in order to minister to the needs of communities and individuals physically, mentally and spiritually.
+    video: aKyG2NuXd-I
     buttons:
     - label: See Curriculum
       link: "#"

@@ -1,16 +1,29 @@
 <div class="content-width relative py-32 z-0">
-    <div class="max-w-xl mb-6">
-        {{ with .subtitle }}
-        <h4 class="mb-2 text-magenta-red">{{ . }}</h3>
-        {{ end }}
-        <h2 class="mb-6">{{ .title }}</h2>
-        <p class="mb-4 text-regular">{{ .description }}</p>
+    <div class="flex">
+        <div class="max-w-xl mb-6">
+            {{ with .subtitle }}
+            <h4 class="mb-2 text-magenta-red">{{ . }}</h3>
+                {{ end }}
+                <h2 class="mb-6">{{ .title }}</h2>
+                <p class="mb-4 text-regular">{{ .description }}</p>
 
-        <div class="flex -mx-3">
-            {{ range .buttons }}
-            {{ partial "button" (merge . (dict "class" "m-3")) }}
-            {{ end }}
+                <div class="flex -mx-3">
+                    {{ range .buttons }}
+                    {{ partial "button" (merge . (dict "class" "m-3")) }}
+                    {{ end }}
+                </div>
         </div>
+
+        {{ with .video }}
+        <div class="rounded lg:ml-8 overflow-hidden">
+            <img class="lazy-video-thumbnail cursor-pointer" src="https://i.ytimg.com/vi/{{.}}/maxresdefault.jpg"
+                alt="">
+            <iframe class="lazy hidden w-full h-full" data-src="https://www.youtube.com/embed/{{.}}?autoplay=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        {{ end }}
     </div>
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
