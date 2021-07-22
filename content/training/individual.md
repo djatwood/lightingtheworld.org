@@ -53,15 +53,18 @@ blocks:
     color: "peach-yellow"
     image: img/ind-training-leadership-image.png
    context: 
+    light: true
     title:  Level up to leadership 
     subtitle: Health & Wellness Instructor 
     description: This certificate program gives you a broad-based foundational knowledge of practical herbal applications for both personal and family purposes.
     buttons:
     - label: Learn More
       link: \#
+      color: magenta-red
     - label: Pricing
       link: \#
-      class: button-light text-white
+      color: magenta-red
+      background: true
  - kind: training/options
    background:
     gradient: "to right bottom, #47BC8C, #15774F"
