@@ -1,0 +1,24 @@
+{{ $keys := slice }}
+{{ range $key, $_ := site.Data.pricing }}
+{{ $keys = $keys | append $key }}
+{{ end }}
+
+<div class="tabs relative bg-transparent -mt-16 z-20">
+    <div class="content-width flex">
+        {{ range sort $keys "" "desc" }}
+        <button
+            class="tab-controller px-4 py-4 border border-button border-b-0 rounded rounded-b-none mr-2 cursor-pointer bg-buttermilk-yellow"
+            data-id="{{ . }}">
+            {{ . | title }}
+        </button>
+        {{ end }}
+    </div>
+    {{ range $index, $key := (sort $keys "" "desc") }}
+    <div id="tab-{{ . }}" class="tab {{ if eq $index 0}}active{{end}} bg-buttermilk-yellow">
+        {{ partial "block" (dict
+        "kind" "training/pricing"
+        "context" (dict "data" $key)
+        ) }}
+    </div>
+    {{ end }}
+</div>
