@@ -6,7 +6,7 @@
 {{ $keys = $keys | append $key }}
 {{ end }}
 
-<div class="tabs relative bg-transparent -my-16 z-20">
+<div class="tabs relative bg-transparent -mt-16 z-20">
     <div class="content-width flex">
         {{ range sort $keys "" "desc" }}
         <button
@@ -25,4 +25,6 @@
     </div>
     {{ end }}
 </div>
+
+{{ partial "block" (dict "kind" "cta" "context" "hands on training") }}
 {{ end }}
