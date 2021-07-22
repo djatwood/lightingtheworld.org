@@ -1,12 +1,22 @@
-<header class="relative px-12 py-14 text-white bg-plum-red">
-    {{ with .Params.header.background }}
+{{ $background := "bg-plum-red" }}
+{{ with .background }}{{ with .color }}
+{{ if hasPrefix . "#" }}
+{{ $background = . }}
+{{ else }}
+{{ $background = (printf "bg-%s" .) }}
+{{ end }}
+{{ end }}{{ end }}
+
+<header class="relative px-12 py-14 text-white {{ $background }} {{.class}}">
+    {{ with .background }}
     {{ $img := resources.Get .image }}
     {{ $img := $img.Fill (printf "2000x400 %s jpg" .position) }}
-    <img class="absolute top-0 left-0 block w-full h-full object-cover" style="opacity:0.1" src="{{ $img.Permalink }}" alt="">
+    <img class="absolute top-0 left-0 block w-full h-full object-cover" style="opacity:0.1" src="{{ $img.Permalink }}"
+        alt="">
     {{ end }}
 
     <div class="content-width relative z-10">
-        <h1 class="text-white mb-4">{{ .Title }}</h1>
-        <p class="max-w-lg font-light text-lg leading-relaxed">{{ .Summary }}</p>
+        <h1 class="text-white mb-4">{{ .title }}</h1>
+        <p class="max-w-lg font-light text-lg leading-relaxed">{{ .summary }}</p>
     </div>
 </header>

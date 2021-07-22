@@ -5,7 +5,11 @@ draft: false
 blocks: 
  - kind: page-header
    context: 
-    Title: Pricing
+    title: Pricing
+    class: py-32
+    background:
+      color: pigeon-blue
+      image: 'img/pricing-hero-image.png'
  - kind: pricing
 cta: 
   context: "hands on training"
