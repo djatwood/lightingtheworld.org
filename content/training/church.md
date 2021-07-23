@@ -104,7 +104,6 @@ cta:
       color: buttermilk-yellow
 menu:
   footer:
-    name: church
     title: Church Training
     weight: 2
   main:

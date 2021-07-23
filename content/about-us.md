@@ -11,7 +11,6 @@ cta:
   context: start your training
 menu:
   footer:
-    name: about
     title: About Us
     weight: 3
   secondary:
