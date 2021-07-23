@@ -1,10 +1,12 @@
 ---
-title: "Donate"
-date: 2021-03-25T22:50:24-04:00
-draft: false
+title: Donate
+date: 2021-03-25T22:50:24.000-04:00
 summary: Thank you very much for your interest in supporting us financially.
----
+menu:
+  secondary:
+    weight: 5
 
+---
 We are a registered 501c3 corporation so your donations are tax-deductible!
 
 Please make Checks payable to:
@@ -15,4 +17,4 @@ Wildwood, GA 30757](https://g.page/lightmissions?share)
 
 For Credit Card Donations please use the PayPal link below.
 
-If you have any questions or comments regarding your donation please contact us here. 
+If you have any questions or comments regarding your donation please contact us here.

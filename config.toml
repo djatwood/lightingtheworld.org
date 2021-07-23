@@ -1,63 +1,29 @@
 baseURL = "https://light-org.vercel.app"
 languageCode = "en-us"
 title = "The Lay Institute for Global Health Training | Training Medical Missionaries Worldwide"
-
+[build]
+writeStats = true
+[[menu.main]]
+name = "Sign Up"
+url = "https://lightingtheworld.digitalchalk.com/auth/organization/find"
+weight = 4
+[menu.main.params]
+class = "button border-powder-blue px-6 py-2 border-2 rounded"
+[[menu.secondary]]
+name = "Store"
+url = "/store"
+weight = 4
+[[menu.secondary]]
+name = "News"
+url = "/blog/"
+weight = 3
+[[menu.secondary]]
+name = "Our Work"
+url = "/our-work"
+weight = 2
 [permalinks]
 blog = "/blog/:year/:month/:filename/"
-
 [taxonomies]
 author = "author"
 category = "categories"
 tag = "tags"
-
-[build]
-writeStats = true
-
-[menu]
-
-[[menu.main]]
-name = "Individual Training"
-url = "/individual-training"
-weight = 10
-
-[[menu.main]]
-name = "Church Training"
-url = "/church-training"
-weight = 20
-
-[[menu.main]]
-name = "Pricing"
-url = "/pricing"
-weight = 30
-
-[[menu.main]]
-name = "Sign Up"
-url = "https://lightingtheworld.digitalchalk.com/auth/organization/find"
-weight = 40
-[menu.main.params]
-class = "button border-powder-blue px-6 py-2 border-2 rounded"
-
-[[menu.secondary]]
-name = "About Us"
-url = "/about-us"
-weight = 10
-
-[[menu.secondary]]
-name = "Our Work"
-url = "/our-work"
-weight = 20
-
-[[menu.secondary]]
-name = "News"
-url = "/blog/"
-weight = 30
-
-[[menu.secondary]]
-name = "Store"
-url = "/store"
-weight = 40
-
-[[menu.secondary]]
-name = "Donate"
-url = "/donate"
-weight = 50
