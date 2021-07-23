@@ -25,9 +25,9 @@
 {{ end }}
 
 {{ with ($s.Get "this").background.image }}
-{{ $img := resources.Get ($s.Get "this").background.image }}
+{{ $img := resources.Get . }}
 {{ if ne (path.Ext .) ".svg"}}
-{{ $img = $img.Fit "2000x600" }}
+{{ $img = $img.Fit (or ($s.Get "this").background.scale "2000x600") }}
 {{ end }}
 {{ $s.Set "background-image" (slice
 (printf "background-image:url(%s)" $img.Permalink )
