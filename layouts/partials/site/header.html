@@ -10,11 +10,9 @@
                 {{ end }}
             </div>
             <nav class="w-1/2 max-w-md flex justify-between p-3 text-xs">
-                <a class="text-light font-display" href="/about-us">About Us</a>
-                <a class="text-light font-display" href="/our-work">Our Work</a>
-                <a class="text-light font-display" href="/blog/">News</a>
-                <a class="text-light font-display" href="/store">Store</a>
-                <a class="text-light font-display" href="/donate">Donate</a>
+                {{ range .Site.Menus.secondary }}
+                <a class="text-buttermilk-yellow text-14 font-display" href="{{ .URL }}">{{ .Name }}</a>
+                {{ end }}
             </nav>
         </div>
     </div>
@@ -23,13 +21,16 @@
             {{ $logo := resources.Get "img/logo-light.svg" }}
             {{ $logo.Content | safeHTML }}
         </a>
-        <nav class="w-1/2 max-w-2xl flex justify-between items-center p-4 text-accent-light">
-            <a class="font-display font-bold" href="/individual-training">Individual Training</a>
-            <a class="font-display font-bold" href="/church-training">Church Training</a>
-            <a class="font-display font-bold" href="/pricing">Pricing</a>
-            <a class="button border-white text-white px-6 py-2 border-2 rounded"
-                href="https://lightingtheworld.digitalchalk.com/auth/organization/find" target="_blank"
-                rel="noopener noreferrer">Sign Up</a>
+        <nav class="w-1/2 max-w-2xl flex justify-between items-center p-4">
+            {{ range .Site.Menus.main }}
+            {{ $atts := "" }}
+            {{ if hasPrefix .URL "http" }}
+            {{ $atts = "target='_blank' rel='noopener noreferrer'" | safeHTMLAttr }}
+            {{ end }}
+            <a class="font-display text-15 font-bold text-powder-blue {{ .Params.class }}" href="{{ .URL }}" {{ $atts }}>
+                {{.Name}}
+            </a>
+            {{ end }}
         </nav>
     </div>
 </header>
