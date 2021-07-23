@@ -52,6 +52,7 @@ blocks:
    background:
     color: "peach-yellow"
     image: img/ind-training-leadership-image.png
+    scale: 1000x450
    context: 
     light: true
     title:  Level up to leadership 
