@@ -1,17 +1,17 @@
 <header class="relative bg-primary text-base uppercase z-10">
     <div class="bg-primary-dark">
         <div class="content-width flex justify-between">
-            <div class="flex items-center">
-                {{ range .Site.Data.header.social }}
-                <a class="h-7 mr-4" href="{{ .url }}">
-                    {{ $img := resources.Get .icon }}
+            <div class="flex items-center">                
+                {{ range where .Site.Menus.social "Name" "header" }}{{ range .Children }}
+                <a class="h-7 mr-4" href="{{ .URL }}">
+                    {{ $img := resources.Get .Pre }}
                     {{ $img.Content | safeHTML }}
                 </a>
-                {{ end }}
+                {{ end }}{{ end }}
             </div>
             <nav class="w-1/2 max-w-md flex justify-between p-3 text-xs">
                 {{ range .Site.Menus.secondary }}
-                <a class="text-buttermilk-yellow text-14 font-display" href="{{ .URL }}">{{ .Name }}</a>
+                <a class="text-buttermilk-yellow text-14 font-display" href="{{ .URL }}">{{ .Title }}</a>
                 {{ end }}
             </nav>
         </div>
@@ -28,7 +28,7 @@
             {{ $atts = "target='_blank' rel='noopener noreferrer'" | safeHTMLAttr }}
             {{ end }}
             <a class="font-display text-15 font-bold text-powder-blue {{ .Params.class }}" href="{{ .URL }}" {{ $atts }}>
-                {{.Name}}
+                {{ .Title }}
             </a>
             {{ end }}
         </nav>

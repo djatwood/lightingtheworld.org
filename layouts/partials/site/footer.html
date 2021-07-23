@@ -1,29 +1,33 @@
-<footer class="py-20 bg-gradient-to-b from-primary to-primary-dark text-footer">
+<footer class="py-20 bg-gradient-to-b from-prussian-blue to-denim-blue text-sky-blue">
     <div class="flex flex-nowrap justify-between content-width">
         <div class="max-w-sm">
             <div class="flex mb-6">
-                {{ range .Site.Data.footer.social }}
-                <a class="w-10 mr-8" href="{{ .url }}">
-                    {{ $img := resources.Get .icon }}
+                {{ range where .Site.Menus.social "Name" "footer" }}{{ range .Children }}
+                <a class="w-10 mr-8" href="{{ .URL }}">
+                    {{ $img := resources.Get .Pre }}
                     {{ $img.Content | safeHTML }}
                 </a>
-                {{ end }}
+                {{ end }}{{ end }}
             </div>
-            <h2 class="mb-6 text-4xl text-white font-bold uppercase">Lay Institute for Global Health Training</h2>
+            <h2 class="mb-6 text-white">Lay Institute for Global Health Training</h2>
 
-            <div class="text-xl leading-loose">
+            <div class="text-lg leading-loose">
                 <p>435 Lifestyle Lane</p>
                 <p>Wildwood, Georgia 30757</p>
                 <p>1 (706) 820-9804</p>
             </div>
         </div>
         <div class="grid grid-cols-3 gap-8">
-            {{ range .Site.Data.footer.menu }}
+            {{ range .Site.Menus.footer }}
             <div>
-                <p class="mb-2 text-xl">{{ .label }}</p>
+                <h4 class="mb-2">
+                    <a href="{{ .URL }}">{{ .Title }}</a>
+                </h4>
                 <ul>
-                    {{ range .items }}
-                    <li class="mb-1">{{ .label }}</li>
+                    {{ range .Children }}
+                    <li class="mb-1 text-sm">
+                        <a href="{{ .URL }}">{{ .Title }}</a>
+                    </li>
                     {{ end }}
                 </ul>
             </div>

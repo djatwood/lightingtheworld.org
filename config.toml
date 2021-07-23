@@ -4,26 +4,155 @@ title = "The Lay Institute for Global Health Training | Training Medical Mission
 [build]
 writeStats = true
 [[menu.main]]
-name = "Sign Up"
+title = "Sign Up"
 url = "https://lightingtheworld.digitalchalk.com/auth/organization/find"
 weight = 4
 [menu.main.params]
 class = "button border-powder-blue px-6 py-2 border-2 rounded"
 [[menu.secondary]]
-name = "Store"
+name = "store"
+title = "Store"
 url = "/store"
 weight = 4
 [[menu.secondary]]
-name = "News"
+name = "news"
+title = "News"
 url = "/blog/"
 weight = 3
 [[menu.secondary]]
-name = "Our Work"
+name = "our-work"
+title = "Our Work"
 url = "/our-work"
 weight = 2
+
 [permalinks]
 blog = "/blog/:year/:month/:filename/"
 [taxonomies]
 author = "author"
 category = "categories"
 tag = "tags"
+
+[[menu.footer]]
+name = "individual"
+title = "Individual Training"
+url = ""
+weight = 10
+
+[[menu.footer]]
+parent = "individual"
+name = "individual-overview"
+title = "Overview"
+url = ""
+weight = 1
+
+[[menu.footer]]
+parent ="individual"
+name = "individual-courses"
+title = "Courses"
+url = ""
+weight = 2
+
+[[menu.footer]]
+parent ="individual"
+name = "individual-on-site"
+title = "On-Site Training"
+url = ""
+weight = 3
+
+[[menu.footer]]
+name = "church"
+title = "Church Training"
+url = ""
+weight = 20
+
+[[menu.footer]]
+parent = "church"
+name = "church-overview"
+title = "Overview"
+url = ""
+
+[[menu.footer]]
+parent = "church"
+name = "church-courses"
+title = "Courses"
+url = ""
+
+[[menu.footer]]
+name = "about"
+title = "About Us"
+url = ""
+weight = 30
+
+[[menu.footer]]
+parent = "about"
+name = "about-who"
+title = "Who We Are"
+url = ""
+
+[[menu.footer]]
+parent = "about"
+name = "about-work"
+title = "Our Work"
+url = ""
+
+[[menu.footer]]
+parent = "about"
+name = "about-board"
+title = "Board / Staff"
+url = ""
+
+[[menu.footer]]
+name = "pricing"
+title = "Pricing"
+url = ""
+weight = 40
+
+[[menu.footer]]
+name = "store"
+title = "Store"
+url = ""
+weight = 50
+
+[[menu.footer]]
+name = "news"
+title = "News"
+url = ""
+weight = 60
+
+[[menu.footer]]
+name = "donate"
+title = "Donate"
+url = ""
+weight = 70
+
+[[menu.social]]
+parent = "footer"
+name = "footer-facebook"
+pre = "img/footer-facebook.svg"
+weight = 1
+[[menu.social]]
+parent = "footer"
+name = "footer-twitter"
+pre = "img/footer-twitter.svg"
+weight = 2
+[[menu.social]]
+parent = "footer"
+name = "footer-instagram"
+pre = "img/footer-instagram.svg"
+weight = 3
+
+[[menu.social]]
+parent = "header"
+name = "header-facebook"
+pre = "img/nav-icon-facebook.svg"
+weight = 1
+[[menu.social]]
+parent = "header"
+name = "header-twitter"
+pre = "img/nav-icon-twitter.svg"
+weight = 2
+[[menu.social]]
+parent = "header"
+name = "header-instagram"
+pre = "img/nav-icon-instagram.svg"
+weight = 3

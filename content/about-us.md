@@ -1,5 +1,5 @@
 ---
-title: About
+title: About Us
 date: 2021-02-23T20:07:00.000-05:00
 summary: The Lay Institue for Global Health Training (LIGHT) is a supporting ministry
   of the Seventh-day Adventist church devoted to provide health evangelism training
