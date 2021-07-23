@@ -1,8 +1,8 @@
 {{ if .simple }}
 <div class="flex flex-col items-center py-20 text-center">
-    <h2 class="content-width mb-8 text-white">
+    <h1 class="content-width mb-8 text-white">
         {{ replace .title "\\n" "<br>" | safeHTML }}
-    </h2>
+    </h1>
     <div class="flex justify-center">
         {{ range .buttons }}
         {{ partial "button" (merge . (dict "class" "mx-3"))}}
