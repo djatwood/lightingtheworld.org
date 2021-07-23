@@ -103,6 +103,10 @@ cta:
       link: "\\#"
       color: buttermilk-yellow
 menu:
+  footer:
+    name: church
+    title: Church Training
+    weight: 5
   main:
     weight: 2
 

@@ -10,8 +10,11 @@ header:
 cta:
   context: start your training
 menu:
+  footer:
+    name: about
+    title: About Us
+    weight: 6
   secondary:
-    name: About Us
     weight: 1
 
 ---

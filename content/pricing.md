@@ -13,6 +13,10 @@ blocks:
 cta:
   context: hands on training
 menu:
+  footer:
+    name: pricing
+    title: Pricing
+    weight: 10
   main:
     weight: 3
 

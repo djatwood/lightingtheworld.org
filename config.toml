@@ -3,156 +3,109 @@ languageCode = "en-us"
 title = "The Lay Institute for Global Health Training | Training Medical Missionaries Worldwide"
 [build]
 writeStats = true
+[[menu.footer]]
+name = "church-courses"
+parent = "Church Training"
+title = "Courses"
+weight = 2
+[[menu.footer]]
+name = "church-overview"
+parent = "Church Training"
+title = "Overview"
+weight = 1
+[[menu.footer]]
+name = "news"
+title = "News"
+weight = 12
+[[menu.footer]]
+name = "store"
+title = "Store"
+weight = 11
+[[menu.footer]]
+name = "about-board"
+parent = "about"
+title = "Board / Staff"
+weight = 9
+[[menu.footer]]
+name = "about-work"
+parent = "about"
+title = "Our Work"
+weight = 8
+[[menu.footer]]
+name = "about-who"
+parent = "about"
+title = "Who We Are"
+weight = 7
+[[menu.footer]]
+name = "individual-on-site"
+parent = "individual"
+title = "On-Site Training"
+weight = 4
+[[menu.footer]]
+name = "individual-courses"
+parent = "individual"
+title = "Courses"
+weight = 3
+[[menu.footer]]
+name = "individual-overview"
+parent = "individual"
+title = "Overview"
+weight = 2
 [[menu.main]]
+name = "Sign Up"
 title = "Sign Up"
 url = "https://lightingtheworld.digitalchalk.com/auth/organization/find"
 weight = 4
 [menu.main.params]
 class = "button border-powder-blue px-6 py-2 border-2 rounded"
 [[menu.secondary]]
-name = "store"
-title = "Store"
-url = "/store"
-weight = 4
+name = "our-work"
+title = "Our Work"
+url = "/our-work"
+weight = 2
 [[menu.secondary]]
 name = "news"
 title = "News"
 url = "/blog/"
 weight = 3
 [[menu.secondary]]
-name = "our-work"
-title = "Our Work"
-url = "/our-work"
+name = "store"
+title = "Store"
+url = "/store"
+weight = 4
+[[menu.social]]
+name = "header-instagram"
+parent = "header"
+pre = "img/nav-icon-instagram.svg"
+weight = 3
+[[menu.social]]
+name = "header-twitter"
+parent = "header"
+pre = "img/nav-icon-twitter.svg"
 weight = 2
-
+[[menu.social]]
+name = "header-facebook"
+parent = "header"
+pre = "img/nav-icon-facebook.svg"
+weight = 1
+[[menu.social]]
+name = "footer-instagram"
+parent = "footer"
+pre = "img/footer-instagram.svg"
+weight = 6
+[[menu.social]]
+name = "footer-twitter"
+parent = "footer"
+pre = "img/footer-twitter.svg"
+weight = 5
+[[menu.social]]
+name = "footer-facebook"
+parent = "footer"
+pre = "img/footer-facebook.svg"
+weight = 4
 [permalinks]
 blog = "/blog/:year/:month/:filename/"
 [taxonomies]
 author = "author"
 category = "categories"
 tag = "tags"
-
-[[menu.footer]]
-name = "individual"
-title = "Individual Training"
-url = ""
-weight = 10
-
-[[menu.footer]]
-parent = "individual"
-name = "individual-overview"
-title = "Overview"
-url = ""
-weight = 1
-
-[[menu.footer]]
-parent ="individual"
-name = "individual-courses"
-title = "Courses"
-url = ""
-weight = 2
-
-[[menu.footer]]
-parent ="individual"
-name = "individual-on-site"
-title = "On-Site Training"
-url = ""
-weight = 3
-
-[[menu.footer]]
-name = "church"
-title = "Church Training"
-url = ""
-weight = 20
-
-[[menu.footer]]
-parent = "church"
-name = "church-overview"
-title = "Overview"
-url = ""
-
-[[menu.footer]]
-parent = "church"
-name = "church-courses"
-title = "Courses"
-url = ""
-
-[[menu.footer]]
-name = "about"
-title = "About Us"
-url = ""
-weight = 30
-
-[[menu.footer]]
-parent = "about"
-name = "about-who"
-title = "Who We Are"
-url = ""
-
-[[menu.footer]]
-parent = "about"
-name = "about-work"
-title = "Our Work"
-url = ""
-
-[[menu.footer]]
-parent = "about"
-name = "about-board"
-title = "Board / Staff"
-url = ""
-
-[[menu.footer]]
-name = "pricing"
-title = "Pricing"
-url = ""
-weight = 40
-
-[[menu.footer]]
-name = "store"
-title = "Store"
-url = ""
-weight = 50
-
-[[menu.footer]]
-name = "news"
-title = "News"
-url = ""
-weight = 60
-
-[[menu.footer]]
-name = "donate"
-title = "Donate"
-url = ""
-weight = 70
-
-[[menu.social]]
-parent = "footer"
-name = "footer-facebook"
-pre = "img/footer-facebook.svg"
-weight = 1
-[[menu.social]]
-parent = "footer"
-name = "footer-twitter"
-pre = "img/footer-twitter.svg"
-weight = 2
-[[menu.social]]
-parent = "footer"
-name = "footer-instagram"
-pre = "img/footer-instagram.svg"
-weight = 3
-
-[[menu.social]]
-parent = "header"
-name = "header-facebook"
-pre = "img/nav-icon-facebook.svg"
-weight = 1
-[[menu.social]]
-parent = "header"
-name = "header-twitter"
-pre = "img/nav-icon-twitter.svg"
-weight = 2
-[[menu.social]]
-parent = "header"
-name = "header-instagram"
-pre = "img/nav-icon-instagram.svg"
-weight = 3

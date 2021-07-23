@@ -124,6 +124,10 @@ blocks:
 cta:
   context: hands on training
 menu:
+  footer:
+    name: individual
+    title: Individual Training
+    weight: 1
   main:
     weight: 1
 

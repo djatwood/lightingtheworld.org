@@ -3,6 +3,10 @@ title: Donate
 date: 2021-03-25T22:50:24.000-04:00
 summary: Thank you very much for your interest in supporting us financially.
 menu:
+  footer:
+    name: donate
+    title: Donate
+    weight: 13
   secondary:
     weight: 5
 
