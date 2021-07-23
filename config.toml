@@ -4,6 +4,36 @@ title = "The Lay Institute for Global Health Training | Training Medical Mission
 [build]
 writeStats = true
 [[menu.footer]]
+name = "about-board"
+parent = "About Us"
+title = "Board / Staff"
+weight = 3
+[[menu.footer]]
+name = "about-work"
+parent = "About Us"
+title = "Our Work"
+weight = 2
+[[menu.footer]]
+name = "about-who"
+parent = "About Us"
+title = "Who We Are"
+weight = 1
+[[menu.footer]]
+name = "individual-on-site"
+parent = "Individual Training"
+title = "On-Site Training"
+weight = 3
+[[menu.footer]]
+name = "individual-courses"
+parent = "Individual Training"
+title = "Courses"
+weight = 2
+[[menu.footer]]
+name = "individual-overview"
+parent = "Individual Training"
+title = "Overview"
+weight = 1
+[[menu.footer]]
 name = "church-courses"
 parent = "Church Training"
 title = "Courses"
@@ -16,41 +46,11 @@ weight = 1
 [[menu.footer]]
 name = "news"
 title = "News"
-weight = 12
+weight = 6
 [[menu.footer]]
 name = "store"
 title = "Store"
-weight = 11
-[[menu.footer]]
-name = "about-board"
-parent = "about"
-title = "Board / Staff"
-weight = 9
-[[menu.footer]]
-name = "about-work"
-parent = "about"
-title = "Our Work"
-weight = 8
-[[menu.footer]]
-name = "about-who"
-parent = "about"
-title = "Who We Are"
-weight = 7
-[[menu.footer]]
-name = "individual-on-site"
-parent = "individual"
-title = "On-Site Training"
-weight = 4
-[[menu.footer]]
-name = "individual-courses"
-parent = "individual"
-title = "Courses"
-weight = 3
-[[menu.footer]]
-name = "individual-overview"
-parent = "individual"
-title = "Overview"
-weight = 2
+weight = 5
 [[menu.main]]
 name = "Sign Up"
 title = "Sign Up"

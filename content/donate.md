@@ -6,7 +6,7 @@ menu:
   footer:
     name: donate
     title: Donate
-    weight: 13
+    weight: 7
   secondary:
     weight: 5
 

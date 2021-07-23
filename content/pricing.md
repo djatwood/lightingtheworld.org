@@ -16,7 +16,7 @@ menu:
   footer:
     name: pricing
     title: Pricing
-    weight: 10
+    weight: 4
   main:
     weight: 3
 

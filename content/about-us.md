@@ -13,7 +13,7 @@ menu:
   footer:
     name: about
     title: About Us
-    weight: 6
+    weight: 3
   secondary:
     weight: 1
 

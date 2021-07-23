@@ -106,7 +106,7 @@ menu:
   footer:
     name: church
     title: Church Training
-    weight: 5
+    weight: 2
   main:
     weight: 2
 
